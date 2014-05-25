@@ -1,0 +1,16 @@
+[{
+    "title": "Прогулки по крышам 1",
+    "date": "12:30",
+    "unread": 20,
+    "dataUrl": "data/dialog1.json"
+}, {
+    "title": "Прогулки по крышам 2",
+    "date": "17:30",
+    "unread": 0,
+    "dataUrl": "data/dialog2.json"
+}, {
+    "title": "Прогулки по крышам 3",
+    "date": "14:30",
+    "unread": 10,
+    "dataUrl": "data/dialog1.json"
+}]

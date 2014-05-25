@@ -1,0 +1,7 @@
+.active {
+    background: yellow;
+}
+
+.chat__dialogs-item {
+    cursor: pointer;
+}

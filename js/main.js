@@ -36,6 +36,10 @@ var PeopleView = Backbone.View.extend({
         this.collection.on('add', this.addOne, this);
         this.render();
     },
+    events: {
+        'click li': 'setActive',
+        'click #sort': 'sortIt'
+    },
     template: $('#peopleTemplate').html(),
     render: function() {
         this.collection.each(function(person) {
@@ -51,6 +55,12 @@ var PeopleView = Backbone.View.extend({
             model: person
         });
         this.$el.append(personView.render().el);
+    },
+    sortIt: function() {
+        console.log('sort');
+    },
+    setActive: function(e) {
+        console.log(e.currentTarget);
     }
 });
 
