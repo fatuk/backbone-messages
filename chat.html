@@ -7,9 +7,14 @@
 </head>
 <body>
     <div class="chat">
+        <div id="search"></div>
         <div class="chat__dialogs js-dialogs"></div>
-        <div class="chat__dialog js-dialog"></div>
+        <div class="chat__dialog js-dialog" data-url="data/dialogs.json"></div>
     </div>
+
+    <script type="text/mustache" id="searchInputTemplate" data-url="data/dialogs-filtered.json">
+        <input type="text" id="searchInput">
+    </script>
 
     <script type="text/mustache" id="dialogsItemTemplate">
         <p class="js-dialogsItem" data-url="{{dataUrl}}">{{title}} {{#unread}}({{unread}}){{/unread}} - {{date}}</p>
