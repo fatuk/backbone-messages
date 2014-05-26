@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Backbone tutorial</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="js-search">
+        Search filter
+    </div>
+
+    <script type="text/mustache" id="searchInputTemplate">
+        <input type="text" id="searchInput">
+    </script>
+
+    <script type="text/mustache" id="listItemTemplate">
+        {{name}}
+    </script>
+
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/mustache/mustache.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+    <script src="js/search-filter.js"></script>
+</body>
+</html>
